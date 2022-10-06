@@ -159,7 +159,9 @@ export default function NativeStackScreen({
         component={AlbumsScreen}
         options={{
           title: 'Albums',
-          presentation: 'modal',
+          presentation: 'fullScreenModal',
+          gestureEnabled: true,
+          gestureDirection: 'vertical',
           headerTransparent: true,
           headerBlurEffect: 'light',
         }}

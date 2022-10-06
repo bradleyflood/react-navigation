@@ -143,7 +143,9 @@ export default function StackScreen({ navigation }: Props) {
         name="Input"
         component={InputScreen}
         options={{
-          presentation: 'modal',
+          presentation: 'fullScreenModal',
+          gestureEnabled: true,
+          gestureDirection: 'vertical',
         }}
       />
       <Stack.Screen name="Article" component={ArticleScreen} />
